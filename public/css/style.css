@@ -1,4 +1,6 @@
 @import url("normalize.css");
+
+
 * {
   margin: 0;
   padding: 0;
@@ -97,12 +99,12 @@ p {
 
 .productos {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
-.detalles-producto {
+.producto {
   border-top: 1px solid #ebebeb;
-  padding: 15px;
+  padding: 10px;
   background-color: white;
 }
 
@@ -140,6 +142,10 @@ img {
 
 footer {
   text-align: center;
+}
+
+.items-footer{
+  display: flex;
 }
 
 .tarjeta-credito {
@@ -186,3 +192,15 @@ footer {
 
 }
   
+
+
+/*aqui pruebo el mensaje del span*/
+
+.error_message{
+  display: none;
+}
+
+input[name="Nombre"]:invalid + span.error_message{
+  display: inline;
+  color: red;
+}
